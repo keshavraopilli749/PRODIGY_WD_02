@@ -1,0 +1,99 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4CAF50, #2196F3);
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #FFC107;
+}
+
+.stopwatch {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#timer {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startPause {
+    background-color: #4CAF50;
+}
+
+#stop {
+    background-color: #FF5722;
+}
+
+#lap {
+    background-color: #FFC107;
+}
+
+#reset {
+    background-color: #F44336;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Lap list styling */
+.laps {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+}
+
+.laps div {
+    font-size: 1.2rem;
+    padding: 5px 0;
+}
